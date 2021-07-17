@@ -1,0 +1,12 @@
+version: "3"
+services:
+  master:
+    environment:
+      - TELEGRAM_BOT_TOKEN=<TOKEN_HERE>
+    build:
+      context: .
+      dockerfile: tg_bot.Dockerfile
+    volumes:
+      - .:/app/
+  
+#here can be db installation
