@@ -1,12 +1,19 @@
 version: "3"
 services:
-  master:
-    environment:
-      - TELEGRAM_BOT_TOKEN=<TOKEN_HERE>
+  rasa_actions:
     build:
       context: .
-      dockerfile: tg_bot.Dockerfile
+      dockerfile: rasa_actions.Dockerfile
     volumes:
       - .:/app/
-  
-#here can be db installation
+    ports:
+      - "5055:5055"
+
+  rasa_listener:
+    build:
+      context: .
+      dockerfile: rasa_listener.Dockerfile
+    volumes:
+      - .:/app/
+    ports:
+      - "5005:5005"
