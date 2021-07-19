@@ -4,6 +4,8 @@
 
 EvManager - is a bot that allows you to find free time in your schedule and notify colleagues as quickly as possible using a convenient messenger.
 
+The main infrastracture based on NLU Framework - [rasa](https://rasa.com/) which is the leading conversational AI platform, for personalized conversations at scale.
+
 ## Goals:
 
 1. Create Slack bot that could receive commands (“my free time slots”, “send email to [Name]” )
