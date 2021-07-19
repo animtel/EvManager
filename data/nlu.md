@@ -18,6 +18,18 @@
 - am I talking to a bot?
 - am I talking to a human?
 
+## intent:time_slots
+- what's slots?
+- what about time?
+- my free time slots
+- time slots
+
+## intent: send_email_to
+- send email to [Name](name)
+- send details by mail to [Name](name)
+- mail to [Name](name)
+- email to [Name](name)
+
 ## intent:weather
 - what's the weather
 - what is the temperature today

@@ -32,3 +32,5 @@ Note: not necessary if you have an open endpoint that can be configured for rece
 ## 2) Run rasa listener, actions:
 - add bot configuration to credentials.yml (in my case, I've used telegram bot and was needed only its token, id and webhook server url which we were generated in 1 part)
 - `docker-compose up -d` will start rasa actions server and listener
+
+## If you want to add new NLU functionality, dont forget about `rasa train` before start.

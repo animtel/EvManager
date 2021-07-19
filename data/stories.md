@@ -17,6 +17,26 @@
 * thanks
   - utter_welcome
   - utter_goodbye
+  
+## time short
+* greet
+  - utter_greet
+* time_slots
+  - utter_getting_time_slots
+  - action_get_g_time_slots
+* thanks
+  - utter_welcome
+  - utter_goodbye
+  
+## send email short
+* greet
+  - utter_greet
+* send_email_to
+  - utter_sending_email
+  - action_send_email_to
+* thanks
+  - utter_welcome
+  - utter_goodbye
 
 ## weather short
 * greet
