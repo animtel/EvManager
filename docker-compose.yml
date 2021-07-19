@@ -1,5 +1,14 @@
 version: "3"
 services:
+  postgres:
+    image: postgres:latest
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: "rasa"
+      POSTGRES_PASSWORD: "password"
+      POSTGRES_USER: "postgres"
+
   rasa_actions:
     build:
       context: .

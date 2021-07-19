@@ -13,6 +13,23 @@
 action_endpoint:
   url: "http://rasa_actions:5055/webhook"
 
+tracker_store:
+  type: SQL
+  dialect: "postgresql"  # the dialect used to interact with the db
+  url: "postgres"
+  db: "rasa"  # path to your db
+  username: "postgres"  # username used for authentication
+  password: "password"
+  login_db: "postgres"
+
+# tracker_store:
+#     type: SQL
+#     dialect: "mysql"  # the dialect used to interact with the db
+#     url: "mysql:3306"  # (optional) host of the sql db, e.g. "localhost"
+#     db: "rasa.db"  # path to your db
+#     username: "login" # username used for authentication
+#     password: "passwd"
+
 # Tracker store which is used to store the conversations.
 # By default the conversations are stored in memory.
 # https://rasa.com/docs/rasa/tracker-stores
